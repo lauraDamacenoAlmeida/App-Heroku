@@ -1,0 +1,5 @@
+import os
+with open(os.path.join('./Documents/teste','Procfile'), "w") as file1:
+    toFile = 'web: sh setup.sh && streamlit run regression.py'
+
+file1.write(toFile)
